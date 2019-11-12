@@ -13,3 +13,6 @@ c:\users\moren\onedrive\documentos\visual studio 2015\Projects\ProyectoL3Fiesta\
 c:\users\moren\onedrive\documentos\visual studio 2015\Projects\ProyectoL3Fiesta\Fiestas\bin\Debug\BL_Fiestas.dll
 c:\users\moren\onedrive\documentos\visual studio 2015\Projects\ProyectoL3Fiesta\Fiestas\bin\Debug\BL_Fiestas.pdb
 c:\users\moren\onedrive\documentos\visual studio 2015\Projects\ProyectoL3Fiesta\Fiestas\obj\Debug\Fiestas.FormReservar.resources
+C:\Users\moren\OneDrive\Escritorio\Proyecto3-tarea2\tarea2\Fiestas\bin\Debug\Fiestas.exe.config
+C:\Users\moren\OneDrive\Escritorio\Proyecto3-tarea2\tarea2\Fiestas\obj\Debug\Fiestas.exe
+C:\Users\moren\OneDrive\Escritorio\Proyecto3-tarea2\tarea2\Fiestas\obj\Debug\Fiestas.pdb
