@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D6B1FFD-22A3-44DD-B0F6-4130C98F2E29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fiestas</RootNamespace>
+    <AssemblyName>Fiestas</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL_Fiestas\Reserva.cs" />
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contrato.Designer.cs">
+      <DependentUpon>Contrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBienvenida.Designer.cs">
+      <DependentUpon>FormBienvenida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGaleria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGaleria.Designer.cs">
+      <DependentUpon>FormGaleria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReservar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReservar.Designer.cs">
+      <DependentUpon>FormReservar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Politicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Politicas.Designer.cs">
+      <DependentUpon>Politicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Socios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Socios.Designer.cs">
+      <DependentUpon>Socios.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormBienvenida.resx">
+      <DependentUpon>FormBienvenida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGaleria.resx">
+      <DependentUpon>FormGaleria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReservar.resx">
+      <DependentUpon>FormReservar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\BL_Fiestas.Reserva.datasource" />
+    <None Include="Properties\DataSources\BL_Fiestas.ReservaBL.datasource" />
+    <None Include="Properties\DataSources\BL_Fiestas.SeguridadBL.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9daa5318-b9ee-411c-b600-3efeb45c5b69.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_5002-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1476012327.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\birthday-celebration-background-birthday-balloon-wallpaper-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\77240085-rosa-púrpura-cumpleaños-de-fondo-con-globos-y-brillante.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9daa5318-b9ee-411c-b600-3efeb45c5b691.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fiestas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL_Fiestas\BL_Fiestas.csproj">
+      <Project>{03ca2e23-beb5-4b9b-b6c3-842934fecdda}</Project>
+      <Name>BL_Fiestas</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3f4b5de1e6ac0893a90abfbb49ee3863.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-bases-de-pastel-boda-fiesta-cumpleanos-platinumcakeware-D_NQ_NP_640565-MLM29205018583_012019-Q.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9f648ce8c557afabf750be68e1802439.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26b9c27fa9b0debf2b56d1a27ebedf58.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9daa5318-b9ee-411c-b600-3efeb45c5b692.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80db921ea4916df0d2a6d9a46fe30cdc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81KMYsw7uBL._SL1500_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\415eZwjq9IL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1462235eb16a207fbe59b53e4682af0a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2311452340.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a00db3418d3322c8cdf9292fa6f80841.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A010405_010405.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alquilar-Disco-Movil-4000.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arreglos-florales-para-una-fiesta-de-16-anos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alquilar-sonido-y-luz-party.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BRLioKNCEAAyoCf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cfb_206105.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Consejos-menú-boda-optimizada-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comidas-sanas-menu-saludable-boda-original-ideas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e555250b66dac6077e5719e3b192444e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mantel-rojo-casaymantel-ideas-decoracion-mesa-mantelerias.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagenes-de-arreglos-florales-para-fiestas-5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fiesta-hawaiana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOZZEcentrotavola-2-435x288.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torta-chanel-compressor.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

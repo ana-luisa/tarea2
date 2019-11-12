@@ -1,0 +1,9 @@
+c:\users\moren\onedrive\documentos\visual studio 2015\Projects\ProyectoL3Fiesta\BL_Fiestas\obj\Debug\BL_Fiestas.csprojResolveAssemblyReference.cache
+c:\users\moren\onedrive\documentos\visual studio 2015\Projects\ProyectoL3Fiesta\BL_Fiestas\bin\Debug\BL_Fiestas.dll
+c:\users\moren\onedrive\documentos\visual studio 2015\Projects\ProyectoL3Fiesta\BL_Fiestas\bin\Debug\BL_Fiestas.pdb
+c:\users\moren\onedrive\documentos\visual studio 2015\Projects\ProyectoL3Fiesta\BL_Fiestas\obj\Debug\BL_Fiestas.dll
+c:\users\moren\onedrive\documentos\visual studio 2015\Projects\ProyectoL3Fiesta\BL_Fiestas\obj\Debug\BL_Fiestas.pdb
+c:\users\moren\onedrive\documentos\visual studio 2015\Projects\ProyectoL3Fiesta\BL_Fiestas\obj\Debug\BL_Fiestas.FormContrato.resources
+c:\users\moren\onedrive\documentos\visual studio 2015\Projects\ProyectoL3Fiesta\BL_Fiestas\obj\Debug\BL_Fiestas.FormPolitica.resources
+c:\users\moren\onedrive\documentos\visual studio 2015\Projects\ProyectoL3Fiesta\BL_Fiestas\obj\Debug\BL_Fiestas.ReporteReservas.resources
+c:\users\moren\onedrive\documentos\visual studio 2015\Projects\ProyectoL3Fiesta\BL_Fiestas\obj\Debug\BL_Fiestas.csproj.GenerateResource.Cache
